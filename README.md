@@ -2,15 +2,18 @@ A Docker image based on Ubuntu, running PHP7 on Apache2 using a MySQL Database f
 
 ###Technical requirements  
  - Install Docker
+ 
 The host machine must have Docker installed in order to build and run the Container.
 Instructions on how to install Docker can be found on the official [page](https://docs.docker.com/engine/installation/)
  - Install Docker Compose
+ 
 Docker Compose helps on orchestrating the communication between the `application` container and `mysql` container.
 Instructions on how to install Docker Compose can be found on the official [page](https://docs.docker.com/compose/install/).
  
 ###Installation
  
  - Clone source code
+ 
  On the host machine clone the GitHub(`git` is required to be installed) repository by executing:
  
  ```
@@ -18,10 +21,12 @@ Instructions on how to install Docker Compose can be found on the official [page
  ```
  
  - Add the Symfony2 Application
+ 
  On the **application** directory setup the Symfony2 App. Do not install the Vendor packages, composer takes care of it during the building process.
  
  
  - Run Docker
+ 
  Go to the root directory of project and execute command:
  
  ``` 
